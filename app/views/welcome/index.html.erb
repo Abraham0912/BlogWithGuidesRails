@@ -1,10 +1,14 @@
 <h1>Welcome#index</h1>
+
+<h2>Para ver todas las rutas hay que ir a localhost:3000/routes</h2>
+
 <p>Find me in app/views/welcome/index.html.erb</p>
 
 
 <h1>Hello, Rails!</h1>
+<%= link_to 'My Blog', controller: 'articles' %>
 
-
+<hr>
 <form action="http://localhost:3000/welcome/index">
     <input type="submit" value="Go to Index" />
 </form>
@@ -13,3 +17,4 @@
 <form action="http://localhost:3000/welcome/testing">
     <input type="submit" value="Go to Testing" />
 </form>
+
