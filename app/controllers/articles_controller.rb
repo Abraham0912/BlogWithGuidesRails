@@ -1,5 +1,12 @@
 class ArticlesController < ApplicationController
 
+  #Auntenticacion basica con http_basic_authenticate_with
+   http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+
+
+
+
+
   def index
     #Muestra la lista completa de articulos
     @articles = Article.all 
