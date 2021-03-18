@@ -1,5 +1,11 @@
 class CommentsController < ApplicationController
 
+  #Autenticacion con http_basic_authenticate_with
+  http_basic_authenticate_with name: "abraham", password: "1234", only: :destroy
+
+
+
+
   def create
     #Se recupera el id de article:
     #@article = Article.find(params[:id])
