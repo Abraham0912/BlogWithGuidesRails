@@ -1,2 +1,0 @@
-Hi!, i am first line of document.
-Good Bye !
